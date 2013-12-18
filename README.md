@@ -22,6 +22,12 @@ browse to imgs-scripts root folder:
 $ cd imgs-scripts
 ```
 
+You may need to install ```libjpeg```
+
+``` sh
+$ brew install libjpeg
+```
+
 Create a virtualenv directory `env`, activate the virtualenv and install the requirements:
 
 ``` sh
