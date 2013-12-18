@@ -99,7 +99,7 @@ def main():
             row = [image]
             sys.stdout.write('\x1b[2K\r[' + str(n+1) + '/' + str(total) +'] ' + image)
             sys.stdout.flush()
-            dominant = colorz(os.path.abspath(os.path.join(options.folder,image)), options.color_number)
+            dominant = colorz(os.path.join(options.folder,image), options.color_number)
             row.extend(dominant)
             writer.writerow(row)
         except:
