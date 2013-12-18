@@ -1,4 +1,7 @@
 *.py[cod]
+.DS_Store
+data/*
+env/*
 
 # C extensions
 *.so
