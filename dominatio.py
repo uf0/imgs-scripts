@@ -21,6 +21,8 @@ rtoh = lambda rgb: '#%s' % ''.join(('%02x' % p for p in rgb))
 
 def colorz(filename, n=3):
     img = Image.open(filename)
+    if img.mode is not "RGB":
+        img = img.convert("RGB")
     img.thumbnail((200, 200))
     w, h = img.size
 
